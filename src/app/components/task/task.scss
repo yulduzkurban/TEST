@@ -1,0 +1,64 @@
+.task {
+  cursor: pointer;
+
+  .task-column {
+    &--icon {
+      display: none;
+      margin-left: 10px;
+    }
+  }
+
+  &:hover {
+    .task-column {
+      color: #5847F1;
+
+      &--icon {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.priority,
+.status {
+  display: inline-block;
+  height: 28px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  color: #303240;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  box-sizing: border-box;
+}
+
+.priority {
+  &__low {
+    background-color: #C1E288;
+  }
+
+  &__high {
+    background-color: #FBB6B6;
+  }
+
+  &__medium {
+    background-color: #FFEDC9;
+  }
+}
+.status {
+  &__done {
+    background-color: #C1E288;
+  }
+
+  &__in_progress {
+    background-color: #FFEDC9;
+  }
+
+  &__review {
+    background-color: #E1E3E8;
+  }
+
+  &__todo {
+    background-color: #D3EAFF;
+  }
+}

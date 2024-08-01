@@ -1,0 +1,15 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap";
+@import "./assets/styles/_index.scss";
+@import "./assets/styles/normalize.css";
+@import "./assets/styles/_variables.scss";
+@import "./assets/styles/_mixins.scss";
+@import "./assets/styles/_reset.scss";
+@import "./assets/styles/_container.scss";
+@import "./assets/styles/_typography.scss";
+@import "./assets/styles/_index.scss";
+@import "./app/components/dashboard/dashboard.scss";
+@import "../src/app/components/login/login.scss";
+
+body {
+    font-family: "Inter", sans-serif;
+}

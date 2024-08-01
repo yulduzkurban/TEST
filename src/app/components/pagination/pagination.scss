@@ -1,0 +1,33 @@
+@import "../../../assets/styles/_index.scss";
+
+.tab {
+    padding: 28px 0px;
+
+    &__list {
+        border-bottom: 1px solid $tab__border-color;
+        @include flexLayout(flex, flex-start, center, 28px, row nowrap);
+    }
+
+    &__item {
+        &-btn {
+            border: none;
+            padding: 8px 0px;
+            position: relative;
+            background-color: transparent;
+            @include headingFonts($tab__text-color, 16px, 400, 25.6px, none);
+
+            &--active {
+                color: $button__active-color;
+                &::after {
+                    left: 0;
+                    bottom: 0;
+                    content: "";
+                    height: 1px;
+                    width: 100%;
+                    position: absolute;
+                    background-color: $button__active-color;
+                }
+            }
+        }
+    }
+}
